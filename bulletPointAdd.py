@@ -8,7 +8,7 @@ list=text.split('\n')
 
 for i in range(len(list)):
 
-	list[i]='## '+list[i]
+	list[i]=str(i+1)+'. '+list[i]
 
 text='\n'.join(list)
 
