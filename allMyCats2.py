@@ -1,4 +1,5 @@
 catName=[]
+//length of catName is 0
 while True:
         print('cat '+str(len(catName)+1))
         name=input()
