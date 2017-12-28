@@ -1,8 +1,8 @@
 # Regular Expression Symbols
 
 1. ()? matches zero or one of the preceding groups
-2. * matches 0 or more of the preceding groups
-3. + matches 1 or more of the preceding groups
+2. '*' (without quotes) matches 0 or more of the preceding groups
+3. '+' (without quotes) matches 1 or more of the preceding groups
 4. {n} matches exactly n of the preceding groups
 5. {n,} matches n or more of the preceding groups
 6. {,m} matches 0 or more utpo m of the preceding groups
