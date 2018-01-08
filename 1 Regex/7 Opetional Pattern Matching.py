@@ -1,4 +1,4 @@
-#()? this matches optionally
+# ()? this matches optionally
 
 import re
 regObj=re.compile(r'Bat(wo)?man')

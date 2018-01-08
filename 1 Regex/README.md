@@ -18,7 +18,7 @@
 16. [^abc] matches any characters except a or b or c
 17. re.DOTALL matches newline characters, in search method
 18. re.I or re.IGNORECASE macthes case insensitive results , otherwise regex is specific of casing
-19. Regex Objects sub method is used to replace mathed String, it take two argument (substitution,old string), new substituted string will be returned in response
+19. Regex Objects sub method is used to replace matched String, it take two argument (substitution,old string), new substituted string will be returned in response
 20. re.VERBOSE is used to ignore Whitespaces and Comments inside the Regex Pattern
 21. \b to match the boundaries, don't include ^ or $ if matching boundary at beginning or ending
 22. '|' without quotes , pipe characters are used to match alternations, | match a single item out of several possible items separated by the vertical bar.
