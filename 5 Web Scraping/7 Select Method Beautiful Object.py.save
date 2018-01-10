@@ -1,0 +1,65 @@
+import bs4,requests
+
+respsonse=requests.get('https://www.geeksforgeeks.org/python-language-introduction/')
+
+response.raise_for_status()
+
+bObj=bs4.BeautifulSoup(response.text)
+
+bObj.select('.<div class="entry-content">
+			<p>Python is a widely used general-purpose, high level programming language. It was initially designed by Guido van Rossum in 1991 and developed by Python Software Foundation. It was mainly developed for emphasis on code readability, and its syntax allows programmers to express concepts in fewer lines of code.</p>
+<p>Python is a programming language that lets you work quickly and integrate systems more efficiently.</p>
+<p>There are two major Python versions- <strong>Python 2 and Python 3</strong>. Both&nbsp;are quite different.</p>
+<p><strong>Beginning with Python programming:</strong></p>
+<p><strong>1) Finding an Interpreter:</strong></p>
+<p>Before we start Python programming, we need to have an interpreter to interpret and run our programs. There are certain online interpreters like <a href="https://ide.geeksforgeeks.org/"><strong>https://ide.geeksforgeeks.org/</strong></a>, http://ideone.com/ or http://codepad.org/&nbsp; that can be used to start Python without installing an interpreter.</p>
+<p><strong><em>Windows</em>:</strong>There are many interpreters available freely to run Python scripts like IDLE ( Integrated Development Environment ) which is installed when you install the python software from <a href="http://python.org/"><strong>http://python.org/</strong></a></p>
+<p><strong><em>Linux</em>:</strong>For Linux, Python comes bundled with the linux.</p>
+<p><strong>2) Writing first program:</strong></p>
+<p>Following is first program in Python</p>
+<div><div id="highlighter_395349" class="syntaxhighlighter nogutter  python"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="python comments"># Script Begins</code></div><div class="line number2 index1 alt1">&nbsp;</div><div class="line number3 index2 alt2"><code class="python functions">print</code><code class="python plain">(</code><code class="python string">"GeeksQuiz"</code><code class="python plain">)</code></div><div class="line number4 index3 alt1">&nbsp;</div><div class="line number5 index4 alt2"><code class="python comments"># Scripts Ends</code></div></div></td></tr></tbody></table><button class="runIdeBtn" onclick="redirect( 'highlighter_395349', 'python' )">Run on IDE</button></div></div>
+<p>Output:</p>
+<pre>GeeksQuiz</pre>
+<p>Let us analyze the script line by line.</p>
+<p><em><strong>Line 1 : [</strong></em><strong># Script Begins]&nbsp;</strong> In Python comments begin with #. So this statement is for readability of code and ignored by Python interpretor.</p>
+<p><em><strong>Line 2 : </strong><strong>[</strong><strong>print(“GeeksQuiz”)]&nbsp;</strong></em>In a Python script to print something on the console print() function is used – it simply prints out a line ( and also includes a newline unlike in C ). One difference between Python 2 and Python 3 is the print statement. In Python 2, the “print” statement is not a function, and therefore can be invoked without a parenthesis. However, in Python 3, it is a function, and must be invoked with parentheses.</p>
+<p><em><strong>Line 3 : [</strong></em><strong># Script Ends] </strong> This is just another comment like Line 1.</p>
+<div id="video">
+<iframe src="https://www.youtube.com/embed/OLPbd-7Pp_8?feature=oembed" allowfullscreen="" width="665" height="374" frameborder="0"></iframe>
+</div>
+<p>Please write comments if you find anything incorrect, or you want to share more information about the topic discussed above</p>
+
+			 <div class="AdsParent" style="width:100%;">
+<span class="rectangleAd">
+<!--
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+ Big Rectangle Blog Bottom 
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-9465609616171866"
+     data-ad-slot="4061219431"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+-->
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- GfGDownLeftNew -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9465609616171866" data-ad-slot="5794942435" data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</span>
+<span class="responsiveAd">
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- newMobile2 -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9465609616171866" data-ad-slot="1950485631" data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</span>
+</div>
+<h1><strong><a href="http://quiz.geeksforgeeks.org/gate-corner-2/">GATE CS Corner</a>
+&nbsp;&nbsp;&nbsp;<a href="https://practice.geeksforgeeks.org/company-tags">Company Wise Coding Practice</a></strong></h1>
+
+		</div>
+
