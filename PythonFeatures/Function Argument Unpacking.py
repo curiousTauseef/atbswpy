@@ -1,3 +1,4 @@
+# using splat operator
 def func(x,y):
 	print(x,y)
 
@@ -10,4 +11,3 @@ func(*list_tuple)	#in perl6 and ruby * & ** are known as splat operators
 
 print('dictionary')	#single operator in dictionary prints keys, whereas ** prints values
 func(**diction)
-

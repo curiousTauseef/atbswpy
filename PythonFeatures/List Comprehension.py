@@ -1,6 +1,3 @@
 a=[]
-
-for i in range(1,10):
-	a.append(i)
-
+a = [i*i*i for i in range(1, 10)]
 print([i for i in a])
