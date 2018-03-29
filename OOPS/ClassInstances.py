@@ -3,7 +3,7 @@ import datetime
 class Employee(object):
     raise_amt = 1.04
     num_of_emp = 0
-    #below is a constructor
+    #below is a constructor    ( Special Method -- Dunder Init )
     def __init__(self, first, last, pay):
         self.first = first
         self.last = last
@@ -18,6 +18,17 @@ class Employee(object):
     def applyRaise(self):
         self.pay = int(self.pay * self.raise_amt)
 
+    def __repr__(self):
+        return ("Employee('{}', '{}', '{}')".format(self.first, self.last, self.pay))
+
+    def __str__(self):
+        return ('{} - {}'.format(self.fullname(), self.email))
+
+    def __add__(self, other):
+        return (self.pay + other.pay)
+
+    def __len__(self):
+        return (len(self.fullname()))
     #now creating a class method, (working with class insted of instances)
     @classmethod  #just like self it is mandatory for us to pass cls
     def set_raise_amt(cls, amount):
@@ -121,5 +132,16 @@ mgr1.printEmployees()
 print(isinstance(mgr1, Employee))
 print(isinstance(mgr1, Developer))
 print(issubclass(Developer,Employee))
-
-
+print(repr(emp1)) #or emp1.__repr__()
+print(str(emp1)) # or emp1.__str__()
+print(1+2)
+#is same as
+print(int.__add__(1, 2))
+#Operator Overloading
+print( emp1 + emp2 ) #we have redefined dunder add method to add pays of two Employees
+#there are plenty of dunder methods in Python Documentation ( check out Emulating numeric types)
+#__repr__ - unambiguos representation of the object and should be used for debugging and logging and etcself.
+#__str__  - meant to be more of a readable representation of an object
+print(len('test'))
+print('test'.__len__())
+print(len(emp1))  # it will print lenght of employee.fullname
