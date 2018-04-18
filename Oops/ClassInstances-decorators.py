@@ -9,7 +9,6 @@ class Employee:
         self.last = last
         #there is no email argument, still we can create
 
-
     @property
     def email(self):
         return '{}.{}@email.com'.format(self.first, self.last)

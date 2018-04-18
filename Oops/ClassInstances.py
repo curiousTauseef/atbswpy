@@ -140,3 +140,5 @@ print( emp1 + emp2 ) #we have redefined dunder add method to add pays of two Emp
 print(len('test'))
 print('test'.__len__())
 print(len(emp1))  # it will print lenght of employee.fullname
+
+
