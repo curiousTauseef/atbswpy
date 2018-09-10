@@ -1,10 +1,11 @@
 import requests
 
-result=requests.get('https://www.automatetheboringstuff.com/files/rj.txt')
+result = requests.get('https://www.automatetheboringstuff.com/files/rj.txt')
 
 print(result.status_code)  # 200 means everything is correct
 
-print(str(result.raise_for_status())) #will print None as the result , because raise_for_status() works for halting the program if anything is incorrect or incomplete
+# will print None as the result , because raise_for_status() works for halting the program if anything is incorrect or incomplete
+print(str(result.raise_for_status()))
 
 print('--------')
 

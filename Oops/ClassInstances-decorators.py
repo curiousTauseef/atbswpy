@@ -1,13 +1,15 @@
-#getter setter and decorators
+# getter setter and decorators
+
 
 class Employee:
     raise_amt = 1.04
     num_of_emp = 0
-    #below is a constructor    ( Special Method -- Dunder Init )
+    # below is a constructor    ( Special Method -- Dunder Init )
+
     def __init__(self, first, last):
         self.first = first
         self.last = last
-        #there is no email argument, still we can create
+        # there is no email argument, still we can create
 
     @property
     def email(self):
@@ -28,6 +30,7 @@ class Employee:
         print('Delete Name !')
         self.first = None
         self.last = None
+
 
 emp1 = Employee('John', 'Snow')
 

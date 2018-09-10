@@ -1,16 +1,15 @@
 import pyperclip
 
-text=pyperclip.paste()
+text = pyperclip.paste()
 
-list=text.split('\n')
+list = text.split('\n')
 
-#print(list)
+# print(list)
 
 for i in range(len(list)):
 
-	list[i]=str(i+1)+'. '+list[i]
+    list[i] = str(i+1)+'. '+list[i]
 
-text='\n'.join(list)
+text = '\n'.join(list)
 
 pyperclip.copy(text)
-

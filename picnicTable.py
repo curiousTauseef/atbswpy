@@ -1,16 +1,17 @@
-#ljust() rjust() center()
+# ljust() rjust() center()
 
-def printItems(picnicitems,leftjustify,rightjustify):
 
-	print()
+def printItems(picnicitems, leftjustify, rightjustify):
 
-	print('PICNIC ITEMS'.center(leftjustify+rightjustify,'-'))
+    print()
 
-	for k,v in picnicitems.items():
+    print('PICNIC ITEMS'.center(leftjustify+rightjustify, '-'))
 
-		print(k.ljust(leftjustify,'.')+str(str(v).rjust(rightjustify)))
+    for k, v in picnicitems.items():
 
-picnicItems={'apple':12,'sandwiches':15,'juices':12,'snacks':28}
+        print(k.ljust(leftjustify, '.')+str(str(v).rjust(rightjustify)))
 
-printItems(picnicItems,19,1)
 
+picnicItems = {'apple': 12, 'sandwiches': 15, 'juices': 12, 'snacks': 28}
+
+printItems(picnicItems, 19, 1)
