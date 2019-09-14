@@ -1,12 +1,11 @@
 import bs4
 import requests
 
-response = requests.get(
-    'https://www.geeksforgeeks.org/python-language-introduction/')
+response = requests.get("https://www.geeksforgeeks.org/python-language-introduction/")
 
 bObj = bs4.BeautifulSoup(response.text)
 
-pelements = bObj.select('.entry-content > p')
+pelements = bObj.select(".entry-content > p")
 
 print(type(pelements))
 

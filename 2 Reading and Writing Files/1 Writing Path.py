@@ -2,4 +2,4 @@
 
 import os
 
-print(os.path.join('media', 'username', 'New Volume1', 'folder', 'Python'))
+print(os.path.join("media", "username", "New Volume1", "folder", "Python"))

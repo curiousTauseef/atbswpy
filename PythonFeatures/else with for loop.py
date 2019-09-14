@@ -4,9 +4,9 @@ def func(array):
             print(num)
             break
     else:
-        print('no call for break')
+        print("no call for break")
 
 
-print('1st Case')
+print("1st Case")
 a = [5]
 func(a)

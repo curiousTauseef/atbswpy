@@ -7,9 +7,9 @@ while True:
 while True:
     password = input("enter your password : [LETTERS AND NUMBERS ONLY] : ")
     if password.isalnum():
-        if(password == 'googly123'):
-            print('Welcome to the Party !')
+        if password == "googly123":
+            print("Welcome to the Party !")
         else:
-            print('Wrong Password !!')
+            print("Wrong Password !!")
         break
-    print('Passwords can only have letters and numbers')
+    print("Passwords can only have letters and numbers")

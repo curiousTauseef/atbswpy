@@ -13,32 +13,32 @@ class Employee:
 
     @property
     def email(self):
-        return '{}.{}@email.com'.format(self.first, self.last)
+        return "{}.{}@email.com".format(self.first, self.last)
 
     @property
     def fullname(self):
-        return '{} {}'.format(self.first, self.last)
+        return "{} {}".format(self.first, self.last)
 
     @fullname.setter
     def fullname(self, name):
-        first, last = name.split(' ')
+        first, last = name.split(" ")
         self.first = first
         self.last = last
 
     @fullname.deleter
     def fullname(self):
-        print('Delete Name !')
+        print("Delete Name !")
         self.first = None
         self.last = None
 
 
-emp1 = Employee('John', 'Snow')
+emp1 = Employee("John", "Snow")
 
 print(emp1.first)
 print(emp1.email)
 print(emp1.fullname)
 
-emp1.fullname = 'Corey Schafer'
+emp1.fullname = "Corey Schafer"
 
 print(emp1.first)
 print(emp1.email)

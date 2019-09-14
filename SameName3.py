@@ -1,16 +1,16 @@
 def spam():
     global eggs
-    eggs = 'spam'
+    eggs = "spam"
 
 
 def bacon():
-    eggs = 'bacon'
+    eggs = "bacon"
 
 
 def ham():
     print(eggs)
 
 
-eggs = 'global'
+eggs = "global"
 spam()
 print(eggs)

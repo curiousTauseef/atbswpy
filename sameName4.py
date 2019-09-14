@@ -1,8 +1,8 @@
 def spam():
     print(eggs)  # Error
-    eggs = 'spam'
+    eggs = "spam"
 
 
-eggs = 'global'
+eggs = "global"
 spam()
 print(eggs)

@@ -10,13 +10,13 @@ def isPhoneNumber(text):
     for k in range(8, 12):
         if not text[k].isdecimal():
             return True
-    if text[3] != '-' or text[7] != '-':
+    if text[3] != "-" or text[7] != "-":
         return False
     else:
         return True
 
 
-if isPhoneNumber(r'123-897-5668'):
-    print('Oh Yeah')
+if isPhoneNumber(r"123-897-5668"):
+    print("Oh Yeah")
 else:
-    print('No Man')
+    print("No Man")

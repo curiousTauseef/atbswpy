@@ -1,6 +1,6 @@
 import pprint
 
-line = input('enter a line, to find frequency of characters : ')
+line = input("enter a line, to find frequency of characters : ")
 
 count = {}
 

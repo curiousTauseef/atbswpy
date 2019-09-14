@@ -1,7 +1,7 @@
 def eggs(someParameter):
-    someParameter.append('holy')
+    someParameter.append("holy")
 
 
-spam = ['hey', 'dude']
+spam = ["hey", "dude"]
 eggs(spam)
 print(spam)

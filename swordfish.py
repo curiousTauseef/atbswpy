@@ -1,11 +1,11 @@
 while True:
-    print('Who are you')
+    print("Who are you")
     name = input()
-    if name != 'Mayank':
+    if name != "Mayank":
         continue
-    print('Hello '+name+' What is your password')
+    print("Hello " + name + " What is your password")
     password = input()
-    if password == 'swordfish':
-        print('Welcome')
+    if password == "swordfish":
+        print("Welcome")
         break
-print('Access Granted!')
+print("Access Granted!")

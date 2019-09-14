@@ -3,4 +3,4 @@ import random
 
 # make a directory named kuchtobhi
 
-os.makedirs('Tokyo '+str(random.randint(1, 10)))
+os.makedirs("Tokyo " + str(random.randint(1, 10)))

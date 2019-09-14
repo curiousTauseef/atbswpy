@@ -1,7 +1,7 @@
 import requests
 import bs4
 
-response = requests.get('http://nostarch.com')
+response = requests.get("http://nostarch.com")
 
 response.raise_for_status()
 

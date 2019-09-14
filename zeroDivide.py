@@ -1,8 +1,8 @@
 def spam(divideBy):
     try:
-        return 22/divideBy
+        return 22 / divideBy
     except ZeroDivisionError:
-        print('Error! Invalid Division')
+        print("Error! Invalid Division")
 
 
 print(spam(22))
